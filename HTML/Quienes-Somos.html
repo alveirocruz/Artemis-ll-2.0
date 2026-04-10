@@ -4,81 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artemis II | Quiénes Somos</title>
+    <title>Artemis II</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <nav class="nav">
-            <h2 class="logo">ARTEMIS II</h2>
-            <ul class="nav-links">
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ARTEMIS II 🚀</a>
 
-    <div class="container">
-        <h1 id="hqs">Quiénes Somos</h1>
-        <br>
-        <img id="img-astronautas"
-            src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/ciencia/sistema-solar/2026/jsc2023e016432_alt2.jpg?w=720&h=900&fit=crop&crop=faces%2Cfocalpoint"
-            alt="Imagene astronautas">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <section class="card">
-            <div>
-                <h2>Nuetro equipo</h2>
-                <p>
-                    Somos un equipo de estudiantes del programa Generation Colombia,
-                    enfocados en el aprendizaje del desarrollo web mediante proyectos
-                    reales y colaborativos.
-                </p>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quienes-somos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="card">
-            <div>
-                <h2>Que hacemos</h2>
-                <p>
-                    Desarrollamos un blog informativo enfocado en el programa Artemis,
-                    donde investigamos, diseñamos y presentamos contenido sobre las
-                    misiones espaciales, avances tecnológicos y el futuro de la exploración lunar.
-                </p>
-            </div>
-        </section>
+    <div class="container mt-5">
 
-        <section class="card">
-            <div>
-                <h2>¿Por que existe este sitio?</h2>
-                <p>
-                    Este sitio web fue creado con el objetivo de compartir conocimiento
-                    sobre el regreso del ser humano a la Luna y motivar a más personas
-                    a interesarse por la ciencia y la tecnología. Además, forma parte
-                    de nuestro proceso de aprendizaje en desarrollo web y trabajo en equipo.
-                </p>
+        <h1 class="text-center mb-4">Quiénes Somos</h1>
+
+        <div class="text-center mb-5">
+            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/ciencia/sistema-solar/2026/jsc2023e016432_alt2.jpg?w=720&h=900&fit=crop&crop=faces%2Cfocalpoint"
+                class="img-fluid rounded shadow"
+                alt="Astronautas">
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuestro equipo</h5>
+                        <p class="card-text">
+                            Somos un equipo de estudiantes del programa Generation Colombia,
+                            enfocados en el aprendizaje del desarrollo web mediante proyectos
+                            reales y colaborativos.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Qué hacemos</h5>
+                        <p class="card-text">
+                            Desarrollamos un blog informativo enfocado en el programa Artemis,
+                            donde investigamos, diseñamos y presentamos contenido sobre las
+                            misiones espaciales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Por qué existe este sitio?</h5>
+                        <p class="card-text">
+                            Este sitio web fue creado para compartir conocimiento sobre el regreso
+                            a la Luna y motivar el interés por la ciencia y la tecnología.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <footer class="footer">
-        <p>Autores: Grupo 7 - Generation Colombia
-            <br>
-            <br>Luis Salgado
-            <br>David Garcia
-            <br>Nathaly Pulido
-            <br>Yeison Cruz
-            <br>Julian Valderrama
+
+    <footer class="bg-dark text-white text-center mt-5 p-4">
+        <p class="mb-1">Autores: Grupo 7 - Generation Colombia</p>
+        <p class="mb-1">
+            Luis Salgado | David Garcia | Nathaly Pulido | Yeison Cruz | Julian Valderrama
         </p>
-        <br>
-        <p>Email: Nasainfo@Nasa.edu.co</p>
-        <p>Proyecto: Sitio Educativo Artemis II</p>
+        <p class="mb-1">Email: Nasainfo@Nasa.edu.co</p>
+        <p class="mb-0">Proyecto: Sitio Educativo Artemis II</p>
     </footer>
 
-    <script src="js/main.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/main.js"></script>
 
 </body>
 
