@@ -1,19 +1,21 @@
-'use strict';
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
 
-const links = document.querySelectorAll('.nav-links a');
-const page = window.location.pathname.split('/').pop();
+    if (!form) return;
 
-links.forEach(link => {
-    if (link.getAttribute('href') === page) {
-        link.classList.add('active');
-    }
-});
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-const form = document.querySelector('.form');
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        alert('Mensaje enviado correctamente ✅');
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensaje = document.getElementById("mensaje").value.trim();
+
+        if (!nombre || !email || !mensaje) {
+            alert("Todos los campos son obligatorios.");
+            return;
+        }
+
+        alert("Mensaje enviado correctamente.");
         form.reset();
     });
-}
+});
