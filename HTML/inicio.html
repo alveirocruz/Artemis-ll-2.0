@@ -2,87 +2,109 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artemis II | Exploración Lunar</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artemis II | Exploración Lunar</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <h2 class="logo">ARTEMIS II</h2>
-      <ul class="nav-links">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Artemis II</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Quienes-Somos.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Artemis II: La Humanidad Regresa a la Luna</h1>
-      <p>Artemis II es la primera misión tripulada de la NASA rumbo a la Luna desde 1972.</p>
-      <br>
-      <a target="_blank" href="https://ciencia.nasa.gov/sistema-solar/artemis-ii-resumen-de-la-mision/"
-        class="btn">Conocer más</a>
+    <main>
+        <section class="hero text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-white">Artemis II: La Humanidad Regresa a la Luna</h1>
+                <p class="lead">Artemis II es la primera misión tripulada de la NASA rumbo a la Luna desde 1972.</p>
+                <a target="_blank" href="https://ciencia.nasa.gov/sistema-solar/artemis-ii-resumen-de-la-mision/" class="btn btn-outline-light btn-lg my-3">Conocer más</a>
+                <div class="mt-4">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/ce5b/live/44cb10a0-2ef5-11f1-8f68-3b00cd0691af.jpg.webp" alt="Nave Orion" class="img-fluid rounded shadow-lg" style="max-height: 400px;">
+                </div>
+            </div>
+        </section>
 
-      <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/ce5b/live/44cb10a0-2ef5-11f1-8f68-3b00cd0691af.jpg.webp"
-        alt="Nave Orion" class="image" />
-    </section>
+        <section class="container py-5">
+            <div class="row g-4">
+                <article class="col-md-4">
+                    <div class="card h-100 bg-transparent shadow-sm border-0">
+                        <div class="card-body  ">
+                            <h3 class="card-title h5 text-primary">La misión</h3>
+                            <p class="card-text text-white">
+                                El vuelo de prueba de Artemis II será la primera misión de la NASA con tripulación del programa Artemis. Los astronautas confirmarán que todos los sistemas funcionen en el espacio profundo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-    <section class="cards-container">
-      <article class="card">
-        <h3>La misión</h3>
-        <p>El vuelo de prueba de Artemis II será la primera misión de la NASA con tripulación del programa Artemis.
-          En su primer vuelo a bordo de la nave espacial Orion, los astronautas confirmarán que todos los sistemas de la
-          nave
-          espacial funcionen según lo diseñado con la tripulación a bordo en el entorno real del espacio profundo.</p>
-      </article>
+                <article class="col-md-4">
+                    <div class="card h-100 bg-transparent shadow-sm border-0">
+                        <div class="card-body">
+                            <h3 class="card-title h5 text-primary">La tripulación</h3>
+                            <p class="card-text text-white">
+                                Compuesta por Reid Wiseman, Victor Glover (primer afrodescendiente), Christina Koch (primera mujer) y Jeremy Hansen (primer canadiense). Una misión histórica que orbita la Luna.
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-      <article class="card">
-        <h3>La tripulación</h3>
-        <p>La tripulación de la misión Artemis II de la NASA (2026) está compuesta por cuatro astronautas,
-          marcando hitos históricos: Reid Wiseman (comandante), Victor Glover (piloto, primer afrodescendiente
-          en la Luna), Christina Koch (especialista, primera mujer) y Jeremy Hansen (especialista, primer canadiense
-          en el espacio profundo). Esta misión histórica orbita la Luna y ha batido récords de distancia..</p>
-      </article>
+                <article class="col-md-4">
+                    <div class="card h-100  bg-transparent shadow-sm border-0">
+                        <div class="card-body">
+                            <h3 class="card-title h5 text-primary">El futuro lunar</h3>
+                            <p class="card-text text-white">
+                                Artemis se propone superar a las misiones Apolo (1969-1972) incorporando nuevas tecnologías y estrategias para una presencia humana sostenible.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-      <article class="card">
-        <h3>El futuro lunar</h3>
-        <p>La reanudación de la exploración lunar tripulada se inscribe en una etapa de avances tecnológicos y nuevas
-          alianzas internacionales. Las misiones Apolo, que llevaron a 12 estadounidenses a la superficie lunar entre
-          1969 y 1972, sentaron el antecedente científico y simbólico que Artemis se propone superar al incorporar
-          nuevas tecnologías y estrategias.</p>
-      </article>
-    </section>
+        <section class="container py-5 bg-transparent rounded my-5 shadow-lg ">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded shadow" src="https://imagenes.elpais.com/resizer/v2/XNLRY6TJ2FUWDXIJOIDM6TPI2U.jpg?auth=3ad95bfc5d69bb3ea56589034d24eb6e67884a87ca4448f51229aa551b330cbf&width=414" alt="Imagen de nave Orion">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <h2 class="fw-bold text-white">¿Por qué es importante Artemis II?</h2>
+                    <p class="text-white">
+                        Representa el regreso de la humanidad al espacio profundo después de más de 50 años. Esta misión de 10 días valida la nave Orion y el cohete SLS, preparando el terreno para enviar humanos a Marte.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section style="margin-top: 3rem;">
-      <img class="image" src="./assets/art.jpg" alt="Imagen de nave Orion">
-      <h2>¿Por qué es importante Artemis II?</h2>
-      <p>La misión Artemis II es crucial porque representa el regreso de la
-        humanidad al espacio profundo, llevando astronautas a la Luna por
-        primera vez en más de 50 años. Esta misión de 10 días valida la nave
-        Orion y el cohete SLS, probando tecnologías críticas para establecer
-        una presencia lunar sostenible y preparar el terreno para enviar
-        humanos a Marte.</p>
-    </section>
-  </main>
+    <footer class="footer text-center mt-auto bg-primary">
+        <div class="container ">
+            <p class="mb-1 text-white fw-bold">Autores: Grupo 7 - Generation Colombia</p>
+            <p class="small text-white">Luis Salgado | David Garcia | Nathaly Pulido | Yeison Cruz | Julian Valderrama</p>
+            <p class="mb-0 text-white">Email: Nasainfo@Nasa.edu.co</p>
+        </div>
+    </footer>
 
-  <footer class="footer">
-    <p>Autores: Grupo 7 - Generation Colombia
-      <br>
-      <br>Luis Salgado
-      <br>David Garcia
-      <br>Nathaly Pulido
-      <br>Yeison Cruz
-      <br>Julian Valderrama
-    </p>
-    <p>Email: Nasainfo@Nasa.edu.co</p>
-  </footer>
-
-  <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js" defer></script>
 </body>
-
 </html>
