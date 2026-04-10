@@ -29,24 +29,47 @@
         <p>Teléfono académico: +57 300 000 0000</p>
 
         <form class="form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <textarea placeholder="Mensaje" required></textarea>
+            <label for="name">Nombre</label>
+            <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Nombre"
+                required
+            >
+
+            <label for="email">Correo electrónico</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Correo electrónico"
+                required
+            >
+
+            <label for="message">Mensaje</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Mensaje"
+                required
+            ></textarea>
+
             <button type="submit">Enviar mensaje</button>
         </form>
     </main>
 
     <footer class="footer">
-    <p>Autores: Grupo 7 - Generation Colombia
-      <br>
-      <br>Luis Salgado
-      <br>David Garcia
-      <br>Nathaly Pulido
-      <br>Yeison Cruz
-      <br>Julian Valderrama
-    </p>
-    <p>Email: Nasainfo@Nasa.edu.co</p>
-  </footer>
+        <p>Autores: Grupo 7 - Generation Colombia</p>
+        <p>
+            Luis Salgado<br>
+            David Garcia<br>
+            Nathaly Pulido<br>
+            Yeison Cruz<br>
+            Julian Valderrama
+        </p>
+        <p>Email: Nasainfo@Nasa.edu.co</p>
+    </footer>
 
     <script src="js/main.js" defer></script>
 
