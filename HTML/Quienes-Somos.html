@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artemis II</title>
+    <title>Artemis II | Quiénes Somos</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">ARTEMIS II 🚀</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Artemis II</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
@@ -27,32 +27,31 @@
                         <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="quienes-somos.html">Quiénes Somos</a>
+                        <a class="nav-link active" href="Quienes-Somos.html">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-
-        <h1 class="text-center mb-4">Quiénes Somos</h1>
-
-        <div class="text-center mb-5">
-            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/ciencia/sistema-solar/2026/jsc2023e016432_alt2.jpg?w=720&h=900&fit=crop&crop=faces%2Cfocalpoint"
-                class="img-fluid rounded shadow"
-                alt="Astronautas">
+    <section class="hero text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Quiénes Somos</h1>
+            <p class="lead">Conoce el equipo detrás del proyecto Artemis II 🚀</p>
         </div>
+    </section>
+
+    <main class="container py-5">
 
         <div class="row g-4">
 
             <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Nuestro equipo</h5>
+                <div class="card h-100 bg-transparent border-0 shadow">
+                    <div class="card-body text-white">
+                        <h5 class="card-title text-primary">Nuestro equipo</h5>
                         <p class="card-text">
                             Somos un equipo de estudiantes del programa Generation Colombia,
                             enfocados en el aprendizaje del desarrollo web mediante proyectos
@@ -63,9 +62,9 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Qué hacemos</h5>
+                <div class="card h-100 bg-transparent border-0 shadow">
+                    <div class="card-body text-white">
+                        <h5 class="card-title text-primary">Qué hacemos</h5>
                         <p class="card-text">
                             Desarrollamos un blog informativo enfocado en el programa Artemis,
                             donde investigamos, diseñamos y presentamos contenido sobre las
@@ -76,9 +75,9 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">¿Por qué existe este sitio?</h5>
+                <div class="card h-100 bg-transparent border-0 shadow">
+                    <div class="card-body text-white">
+                        <h5 class="card-title text-primary">¿Por qué existe este sitio?</h5>
                         <p class="card-text">
                             Este sitio web fue creado para compartir conocimiento sobre el regreso
                             a la Luna y motivar el interés por la ciencia y la tecnología.
@@ -88,23 +87,19 @@
             </div>
 
         </div>
-    </div>
 
+    </main>
 
-    <footer class="bg-dark text-white text-center mt-5 p-4">
-        <p class="mb-1">Autores: Grupo 7 - Generation Colombia</p>
-        <p class="mb-1">
+    <footer class="bg-primary text-white text-center p-4">
+        <p class="fw-bold mb-1">Autores: Grupo 7 - Generation Colombia</p>
+        <p class="small mb-1">
             Luis Salgado | David Garcia | Nathaly Pulido | Yeison Cruz | Julian Valderrama
         </p>
-        <p class="mb-1">Email: Nasainfo@Nasa.edu.co</p>
-        <p class="mb-0">Proyecto: Sitio Educativo Artemis II</p>
+        <p class="mb-0">Email: Nasainfo@Nasa.edu.co</p>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <script src="js/main.js"></script>
+    <script src="../JS/main.js" defer></script>
 
 </body>
 
